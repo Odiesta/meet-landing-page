@@ -4,14 +4,207 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-cyan-300: #8fe3f9;
+  --color-cyan-600: #4d96a9;
+  --color-purple-300: #d9b8ff;
+  --color-purple-600: #855fb1;
+  --color-slate-300: #d1d1df;
+  --color-slate-600: #87879d;
+  --color-slate-900: #28283d;
+  --color-white: #fafafa;
+
+  --space-1400: 11.2rem;
+  --space-1000: 8rem;
+  --space-900: 7.2rem;
+  --space-800: 6.4rem;
+  --space-700: 5.6rem;
+  --space-500: 4rem;
+  --space-400: 3.2rem;
+  --space-300: 2.4rem;
+  --space-200: 1.6rem;
+  --space-100: 0.8rem;
+  --space-50: 0.4rem;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.text-preset-1 {
+  font-size: 6.4rem;
+  line-height: 1.1;
+  letter-spacing: 0;
+  font-weight: 900;
+}
+
+.text-preset-2 {
+  font-size: 4rem;
+  line-height: 1.1;
+  letter-spacing: 0;
+  font-weight: 900;
+}
+
+.text-preset-3 {
+  font-size: 1.6rem;
+  line-height: 1.1;
+  letter-spacing: 4px;
+  font-weight: 900;
+}
+
+.text-preset-4 {
+  font-size: 1.8rem;
+  line-height: 1.1;
+  letter-spacing: 0px;
+  font-weight: 900;
+}
+
+.text-preset-5 {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
 }
 
 .container {
+  padding: 1rem;
 }
 
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 5rem 0;
+}
 
+.logo {
+}
+
+/* HEADER */
+
+.header {
+}
+
+.header__image-wrapper {
+  margin-bottom: 5rem;
+}
+
+.header__image {
+  width: 100%;
+}
+
+.header__content {
+  text-align: center;
+  padding: 0 5rem;
+  margin-bottom: 5rem;
+}
+
+.header__title {
+}
+
+.header__description {
+}
+
+.header__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.header__btn {
+  margin-bottom: 1rem;
+}
+
+.header__btn--download {
+}
+
+.download-version {
+}
+
+.header__btn--learn-more {
+}
+
+/* MAIN */
+
+.content {
+}
+
+.section-divider {
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 10rem 0 5rem;
+}
+
+.step-number {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-slate-900);
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.step-number::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 5rem;
+  background-color: #000;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.gallery__image {
+  width: 100%;
+}
+
+.about-section {
+  margin-top: 10rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.about-section__first-title {
+}
+
+.about-section__second-title {
+}
+
+.about-section__description {
+  margin-top: 2rem;
+}
+
+/* FOOTER */
+
+.footer {
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.footer__title {
+}
+
+.footer__description {
+  margin-top: 1rem;
+}
+
+.footer__btn {
+  margin-top: 1rem;
+}
