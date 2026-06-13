@@ -78,7 +78,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 5rem 0;
+  margin: var(--space-700) 0;
 }
 
 .logo {
@@ -95,43 +95,77 @@ body {
 
 .header__image {
   width: 100%;
+  transform: scale(1.2);
 }
 
 .header__content {
   text-align: center;
-  padding: 0 5rem;
   margin-bottom: 5rem;
 }
 
 .header__title {
+  font-size: 4rem;
+  line-height: 1.1;
+  letter-spacing: 0;
+  font-weight: 900;
+  padding: 0 4rem;
+  color: var(--color-slate-900);
 }
 
 .header__description {
+  width: 85%;
+  margin: 2rem auto 0;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: var(--color-slate-600);
 }
 
 .header__actions {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .header__btn {
   margin-bottom: 1rem;
+  font-weight: 900;
 }
 
 .header__btn--download {
+  background-color: var(--color-cyan-600);
+  color: var(--color-white);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  padding: 2rem 4rem;
+  border: none;
+  border-radius: 3rem;
 }
 
 .download-version {
+  color: var(--color-cyan-300);
 }
 
 .header__btn--learn-more {
+  background-color: var(--color-purple-600);
+  color: var(--color-white);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  padding: 2rem 4rem;
+  border: none;
+  border-radius: 3rem;
+  margin-top: 1rem;
 }
 
 /* MAIN */
 
 .content {
+  margin-top: var(--space-1400);
+  padding: 0 var(--space-200);
+  margin-bottom: var(--space-800);
 }
 
 .section-divider {
@@ -143,68 +177,121 @@ body {
 }
 
 .step-number {
-  font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--color-slate-900);
+  border: 1px solid var(--color-slate-300);
   border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
+  color: var(--color-slate-600);
+  font-weight: 900;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
 }
 
 .step-number::after {
   content: "";
   position: absolute;
-  top: -50px;
+  top: -8rem;
   left: 50%;
   transform: translateX(-50%);
   width: 1px;
-  height: 5rem;
-  background-color: #000;
+  height: 8rem;
+  background-color: var(--color-slate-300);
 }
 
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 1.6rem;
 }
 
 .gallery__image {
   width: 100%;
+  border-radius: 1rem;
 }
 
 .about-section {
-  margin-top: 10rem;
+  margin-top: var(--space-800);
   text-align: center;
-  padding: 0 2rem;
 }
 
 .about-section__first-title {
+  font-size: 1.2rem;
+  line-height: 1.1;
+  letter-spacing: 4px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--color-cyan-600);
 }
 
 .about-section__second-title {
+  font-size: 3.2rem;
+  line-height: 1.1;
+  letter-spacing: 0;
+  font-weight: 900;
+  margin-top: var(--space-200);
+  color: var(--color-slate-900);
 }
 
 .about-section__description {
-  margin-top: 2rem;
+  margin-top: var(--space-400);
+  color: var(--color-slate-600);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  padding: 0 var(--space-100);
 }
 
 /* FOOTER */
 
 .footer {
   text-align: center;
-  padding: 0 2rem;
+  background-color: var(--color-cyan-600);
+  color: var(--color-white);
+}
+
+.step-number--2 {
+  margin-top: -3.2rem;
+  background-color: var(--color-white);
+}
+
+.step-number--2::after {
+  top: -11.2rem;
 }
 
 .footer__title {
+  margin-top: -3.2rem;
+  font-size: 3.2rem;
+  line-height: 1.1;
+  letter-spacing: 0;
+  font-weight: 900;
 }
 
 .footer__description {
-  margin-top: 1rem;
+  width: 80%;
+  margin: 2rem auto 0;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
 }
 
 .footer__btn {
-  margin-top: 1rem;
+  margin: 3rem 0 3rem;
+  font-weight: 900;
+  background-color: var(--color-purple-600);
+  color: var(--color-white);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  padding: 2rem 4rem;
+  border: none;
+  border-radius: 3rem;
+}
+
+.footer__btn--version {
+  color: var(--color-purple-300);
 }
