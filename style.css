@@ -260,12 +260,12 @@ body {
 }
 
 .step-number--2 {
-  margin-top: -3.2rem;
+  transform: translateY(-3.2rem);
   background-color: var(--color-white);
 }
 
 .step-number--2::after {
-  top: -11.2rem;
+  top: -8rem;
 }
 
 .footer__title {
@@ -367,10 +367,11 @@ body {
 
   .header__image-wrapper {
     width: 40rem;
+    transform: translateY(-2rem);
   }
 
   .header__image-wrapper-2 {
-    margin-top: 5rem;
+    transform: translateY(5rem);
   }
 
   .header__image--tablet {
@@ -446,17 +447,7 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
-  .header__image--tablet {
-    display: none;
-  }
-
-  .header__image--desktop {
-    display: block;
-  }
-
   .header__wrapper {
-    display: flex;
-    align-items: center;
     justify-content: center;
     gap: 7rem;
   }
@@ -467,7 +458,7 @@ body {
   }
 
   .header__title {
-    padding: 0 10rem;
+    padding: 0 12rem;
   }
 
   .header__description {
