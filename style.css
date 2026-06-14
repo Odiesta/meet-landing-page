@@ -144,11 +144,16 @@ body {
   padding: 2rem 4rem;
   border: none;
   border-radius: 3rem;
+  cursor: pointer;
 }
 
 .header__btn--download {
   background-color: var(--color-cyan-600);
   color: var(--color-white);
+}
+
+.header__btn--download:hover {
+  background-color: #71c0d4;
 }
 
 .download-version {
@@ -159,6 +164,10 @@ body {
   background-color: var(--color-purple-600);
   color: var(--color-white);
   margin-top: 1rem;
+}
+
+.header__btn--learn-more:hover {
+  background-color: #b18bdd;
 }
 
 /* MAIN */
@@ -295,6 +304,11 @@ body {
   padding: 2rem 4rem;
   border: none;
   border-radius: 3rem;
+  cursor: pointer;
+}
+
+.footer__btn:hover {
+  background-color: #b18bdd;
 }
 
 .footer__btn--version {
